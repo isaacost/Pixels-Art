@@ -26,10 +26,12 @@ function adicionandoSelected(event) {
     const classeSelected = document.querySelector('.selected');
     classeSelected.classList.remove('selected');
     event.target.classList.add('selected');
-    input.value = '';
+//    input.value = '';
 }
 
 corUm.addEventListener('click', adicionandoSelected);
 corDois.addEventListener('click', adicionandoSelected);
 corTres.addEventListener('click', adicionandoSelected);
 corQuatro.addEventListener('click', adicionandoSelected);
+
+//Requisito 8: pinta os pixels com a cor selecionada
