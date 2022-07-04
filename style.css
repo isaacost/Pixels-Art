@@ -1,6 +1,7 @@
 body {
   text-align: center;
 }
+
 .cor1 {
   width: 80px;
   height: 80px;
@@ -27,6 +28,7 @@ body {
   background-color: pink;
   border: 1px solid black;
 }
+
 .cor4 {
   width: 80px;
   height: 80px;
