@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+}
+.cor1 {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.cor2 {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.cor3 {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    background-color: pink;
+    border: 1px solid black;
+}
+.cor4 {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    background-color: blue;
+    border: 1px solid black;
+}
