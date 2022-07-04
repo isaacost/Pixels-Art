@@ -2,48 +2,11 @@ body {
   text-align: center;
 }
 
-.cor1 {
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  text-align: center;
-  background-color: black;
-  border: 1px solid black;
-}
-
-.cor2 {
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  text-align: center;
-  background-color: red;
-  border: 1px solid black;
-}
-
-.cor3 {
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  text-align: center;
-  background-color: pink;
-  border: 1px solid black;
-}
-
-.cor4 {
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  text-align: center;
-  background-color: blue;
-  border: 1px solid black;
-}
-
 #pixel-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   width: 200px;
-  text-align: center;
 }
 
 .pixel {
@@ -51,6 +14,31 @@ body {
   height: 40px;
   display: inline-block;
   text-align: center;
-  background-color: white;
   border: 1px solid black;
+  background-color: white;
+}
+
+
+.color {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.cor1 {
+  background-color: black;
+}
+
+.cor2 {
+  background-color: red;
+}
+
+.cor3 {
+  background-color: pink;
+}
+
+.cor4 {
+  background-color: blue;
 }
