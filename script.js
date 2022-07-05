@@ -1,18 +1,18 @@
 const pixelBoard = document.getElementById('pixel-board');
-function linhas(n) {
-  for (let i = 1; i <= n; i += 1) {
-    const criaDiv = document.createElement('div');
-    criaDiv.className = 'pixel';
-    pixelBoard.appendChild(criaDiv);
-  }
-}
+function criaBoard(n) {
+    for (let i = 1; i <= n; i++){
+        const linhas = document.createElement('div');
+        linhas.className = 'linhas';
+        pixelBoard.appendChild(linhas);
+        for (let j = 1; j <= n; j++){
+            const colunas = document.createElement('div');
+            colunas.classList.add('pixel');
+            linhas.appendChild(colunas);
+        }
 
-function criaPixels(n) {
-  for (let i = 1; i <= n; i += 1) {
-    linhas(n);
-  }
+    }
 }
-criaPixels(5);
+criaBoard(5);
 
 const corUm = document.querySelector('.cor1');
 const corDois = document.querySelector('.cor2');

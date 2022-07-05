@@ -8,18 +8,25 @@ main {
 }
 
 #pixel-board {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  width: 200px;
   text-align: center;
+  display: inline-block;
+}
+
+#clear-board {
+  margin: 5px;
+}
+
+.linhas {
+  line-height: 0px;
 }
 
 .pixel {
   width: 40px;
   height: 40px;
+  margin: 0px;
   border: 1px solid black;
   background-color: white;
+  display: inline-block;
 }
 
 .color {
@@ -34,13 +41,13 @@ main {
 }
 
 .cor2 {
-  background-color: red;
+  background-color: #a10035;
 }
 
 .cor3 {
-  background-color: pink;
+  background-color: #ff869e;
 }
 
 .cor4 {
-  background-color: blue;
+  background-color: #ffc4c4;
 }
