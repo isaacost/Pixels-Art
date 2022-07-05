@@ -15,41 +15,29 @@ function criaBoard(n) {
 
 criaBoard(5)
 
-const corUm = document.querySelector('.cor1');
-const corDois = document.querySelector('.cor2');
-const corTres = document.querySelector('.cor3');
-const corQuatro = document.querySelector('.cor4');
-function adicionandoSelected(event) {
-  const classeSelected = document.querySelector('.selected');
+function corSelecionada() {
+  const cores = document.getElementById('color-palette').children;
 
-  classeSelected.classList.remove('selected');
-  event.target.classList.add('selected');
+  for (let i = 0; i < cores.length; i += 1) {
+    cores[i].addEventListener('click', function (event) {
+      const selecionadaAtual = document.querySelector('.selected');
+      selecionadaAtual.classList.remove('selected');
+      event.target.classList.add('selected');
+    })
+  }
 }
 
-corUm.addEventListener('click', adicionandoSelected);
-corDois.addEventListener('click', adicionandoSelected);
-corTres.addEventListener('click', adicionandoSelected);
-corQuatro.addEventListener('click', adicionandoSelected);
+corSelecionada();
 
-let corSelecionada = 'cor1';
 function mudaCor() {
-  const pegaPixel = document.querySelectorAll('.pixel');
-  corUm.addEventListener('click', function () {
-    corSelecionada = 'cor1';
-  });
-  corDois.addEventListener('click', function () {
-    corSelecionada = 'cor2';
-  });
-  corTres.addEventListener('click', function () {
-    corSelecionada = 'cor3';
-  });
-  corQuatro.addEventListener('click', function () {
-    corSelecionada = 'cor4';
-  });
+  const pegaPixels = document.querySelectorAll('.pixel');
 
-  for (let i = 0; i < pegaPixel.length; i += 1) {
-    pegaPixel[i].addEventListener('click', function () {
-      pegaPixel[i].className = 'pixel ' + corSelecionada;
+  for (let i = 0; i < pegaPixels.length; i += 1) {
+    pegaPixels[i].addEventListener('click', function (event) {
+      const corSelecionadaAtual = document.querySelector('.selected');
+      const cor = getComputedStyle(corSelecionadaAtual).backgroundColor;
+
+      event.target.style.backgroundColor = cor;
     });
   }
 }
@@ -60,7 +48,9 @@ const pegaBotao = document.getElementById('clear-board');
 function limpar() {
   const pegaPixel = document.querySelectorAll('.pixel');
   for (let i = 0; i < pegaPixel.length; i += 1) {
-    pegaPixel[i].className = 'pixel';
+    pegaPixel[i].style.backgroundColor = 'white';
+    criaBoard();
+    mudaCor();
   }
 }
 
@@ -99,7 +89,7 @@ function escolheTamanho() {
 
 escolheTamanho();
 
-const corAleatoria = document.getElementById('cor-random');
+
 window.addEventListener('load', function () {
   const corDois = document.querySelector('.cor2');
   const corTres = document.querySelector('.cor3');
