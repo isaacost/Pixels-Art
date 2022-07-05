@@ -54,3 +54,12 @@ function mudaCor() {
 }
 
 mudaCor();
+
+const pegaBotao = document.getElementById('clear-board');
+function limpar() {
+  for (let i = 0; i < pegaPixel.length; i += 1) {
+    pegaPixel[i].className = 'pixel';
+  }
+}
+
+pegaBotao.addEventListener('click', limpar);
