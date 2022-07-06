@@ -89,8 +89,8 @@ function escolheTamanho() {
 
 escolheTamanho();
 
-
-window.addEventListener('load', function () {
+const botaoCor = document.getElementById('color-random');
+botaoCor.addEventListener('click', function () {
   const corDois = document.querySelector('.cor2');
   const corTres = document.querySelector('.cor3');
   const corQuatro = document.querySelector('.cor4');
