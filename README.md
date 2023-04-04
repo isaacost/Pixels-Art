@@ -1,3 +1,8 @@
+<h4 align="center">
+  <img width="180px" alt="trybe pixel art logo" src="https://user-images.githubusercontent.com/100851855/229919824-9c306c00-93a4-4ce5-aaa9-6c48658927f8.png" />
+  <br /><br />
+</h4>
+
 # Projeto pixel art!
 
 Projeto realizado durante módulo de fundamentos do curso de desenvolvimento web da Trybe.
