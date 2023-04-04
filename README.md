@@ -3,7 +3,7 @@
   <br /><br />
 </h4>
 
-# Projeto pixel art!
+# Projeto Pixel Art!
 
 Projeto realizado durante módulo de fundamentos do curso de desenvolvimento web da Trybe.
 
